@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <nav class="navbar  bg-dark ">
+        <h1 >Calculator</h1>
+       </nav>
+  <section class="Information">
+
+    <div class="container text-center  ">
+        <div class="row">
+            <div class=" calc col-md-6">
+              
+                <form  name="calculator">
+                    <input type="text"  id="data" name="display" class="inputarea form-control btn-light"  readonly> 
+                    <input type="button" name="" value="1" onclick="click1()" class="btn btn-light">
+                    <input type="button" name="" value="2" onclick="click2()" class="btn btn-light">
+                    <input type="button" name="" value="3"onclick="click3()" class="btn btn-light">
+                    <input type="button" name="" value="clr" onclick="clr()"  class="btn btn-danger">
+
+                    <input type="button" name="" value="4"onclick="click4()"  class="btn btn-light">
+                    <input type="button" name="" value="5"onclick="click5()" class="btn btn-light">
+                    <input type="button" name="" value="6"onclick="click6()" class="btn btn-light">
+                    <input type="button" value="BSPC" onclick="BACKSPC()" class="btn btn-dark">
+                    <input type="button" name="" value="7"onclick="click7()" class="btn btn-light">
+                    <input type="button" name="" value="8"onclick="click8()" class="btn btn-light">
+                    <input type="button" name="" value="9"onclick="click9()" class="btn btn-light">
+                    <button type="button" value="x^2" onclick="square()" class="btn btn-dark">X<sup>2</sup></button>
+
+                    <input type="button" name="" value="+"onclick="plus()" class="btn btn-dark">
+                    <input type="button" name="" value="0"onclick="click0()" class="btn btn-light">
+
+                    <input type="button" name="" value="-" onclick="substrction()" class="btn btn-dark">
+                    <button type="button" value="x^3" onclick="resto3()" class="btn btn-dark">X<sup>3</sup></button>
+
+                    <input type="button" name="" value="/"onclick="div()"  class="btn btn-dark">
+                    <input type="button" name="" value="*"onclick="into()" class="btn btn-dark">
+                  
+                    <input type="button" name="" value="."onclick="dot()" class="btn btn-dark">
+
+                   
+
+                    <input type="button"   class=" equal btn btn-info" onclick="document.calculator.display.value=calculation(document.calculator.display.value)" value="=" >
+                </form>
+            </div>
+            <div class="info col-md-6 ">
+            <div class=" history " id="history">
+                    <h1> calculator history</h1>     
+                </div>
+                <div id="phistory">
+
+                </div>
+              
+                    </div>
+                
+          
+                
+             
+
+               </div>
+            </div>
+        </div>
+        </div>
+   
+  </section>
+    <script src="../JSFile/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
